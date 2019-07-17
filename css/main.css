@@ -1,0 +1,573 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(186, 215, 71);
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+a {    
+    text-decoration: none;
+    color: black;
+}
+
+a:not(.exclude) {
+    color: green;
+
+}
+
+
+
+/* Header */
+header {
+    background-color: rgb(255, 255, 255);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(20, 110, 53) 3px solid;
+}
+
+header a{
+    color: #bebebe;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+
+}
+
+header nav{
+    float: right;
+    margin-top: 20px;
+}
+
+header #logo{
+    float: left;
+}
+
+header #logo img{
+    margin: 0 0 20px 0;
+    max-width: 250px;
+    max-height: 80px;
+    }
+
+header .current a {
+    color: rgb(20, 110, 53);
+    font-weight: bold;
+}
+
+header .current a:hover {
+    color: rgb(20, 110, 53);
+    font-weight: bold;
+}
+
+header a:hover {
+    color: rgb(186, 215, 71);
+    font-weight: bold;
+    transition: color 1s, transform 2s;
+    -webkit-transition: color 1s, -webkit-transform 2s;
+}
+
+/* Showcase */
+
+#banner {
+    min-height: 400px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner.jpg);
+    text-align: center;
+	
+
+}
+
+#banner h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 55px;
+	color: white;
+}
+
+#banner p{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+	color: white;
+}
+
+#banner a .button_1:hover{
+       background-color: #bebebe;
+       cursor: pointer;
+}
+
+/* Boxes */
+
+#boxes {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    height: 90%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5%;
+    background-image: url('../img/fundoIcone.png');
+    background-size: 0px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: background-size 1s, -webkit-transform 2s;
+    transition: background-size 1s, transform 2s;
+    border: 1px solid rgb(186, 215, 71);
+}
+
+#boxes .box img{
+    height: 150px;
+}
+
+#boxes h2{
+    text-align: center;
+}
+
+#boxes a{
+    color:#000000;
+}
+
+#boxes a:hover .box{
+    float: left;
+    width: 30%;
+    height: 90%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-image: url('../img/fundoIcone.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #bebebe;
+    -webkit-transition: background-size 1s, -webkit-transform 2s, border 2s;
+    transition: background-size 1s, transform 2s, border 2s;
+}
+
+
+/* Page Title */
+
+#pageTitle {
+    min-height: 300px;
+    text-align: center;
+}
+
+#pageTitle h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+#pageTitle p{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+}
+
+/* Info */
+
+#info {
+    min-height: 3300px;
+    text-align: center;
+    padding-bottom: 5%;
+    margin-bottom: 1%;
+    background-color: rgb(20, 110, 53);
+}
+
+#info h2 {
+    padding-top: 3%;
+}
+
+#info p {
+    padding: 0 10% 0 10%;
+}
+
+#info .recicleHead {
+    width: 100%;
+    float: left;
+    text-align: left;
+    background-color: rgba(19, 85, 43, 0.3);
+    height: 150px;
+    
+}
+
+
+#info .meio2 {
+    width: 38%;
+    float: left;
+    padding: 3%;
+    min-height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#info .meio2 h2 {
+    padding-top: 0px;
+    font-size: 4em;
+    margin: 0;
+}
+
+#info .meio2 img {
+    padding: 0 0 0 320px;
+    height: 256px;
+    
+}
+
+#info .meio2 img.invert {
+    padding: 0 0 0 0px;
+    height: 256px;
+    
+}
+
+#info .recicleContent {
+    margin: 10% 0 0 0;
+}
+
+#info .meio {
+    width: 38%;
+    margin-top: 5%;
+    float: left;
+    padding: 3%;
+    min-height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#info .meio i {
+    padding: 18px 10px 0 0;
+    vertical-align: top;
+}
+
+#info .meio h3 {
+    display: inline;
+    font-size: 2em;
+}
+
+#info .meio ul {
+    margin-top: 20px;
+    list-style-image: url('../img/icon2.png');
+    list-style-position: inside;
+}
+
+#info .meio ul.rejeitos {
+    margin-top: 20px;
+    list-style-image: url('../img/icon3.png');
+    list-style-position: inside;
+}
+
+#info .meio ul li {
+    border-bottom: solid 1px rgba(19, 85, 43, 0.7);
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#info .meio#rejeitos {
+    margin-top: 200px;
+    padding-left: 150px;
+}
+
+#info .meio#rejeitosInvert {
+    margin-top: 200px;
+}
+
+#info .meio#invert {
+    padding-left: 150px;
+    height: 256px;
+}
+
+/* InfoBot */
+
+#infoBot {
+    min-height: 380px;
+    text-align: center;
+    padding-bottom: 5%;
+    margin-bottom: 3%;
+    border-radius: 5%;
+    background-color: rgb(20, 110, 53);
+    width: 80%;
+    margin-left: 10%;
+    box-shadow:  12px 12px 5px 2px rgba(20, 110, 53, .2);
+}
+
+#infoBot .meio {
+    width: 38%;
+    float: left;
+    padding: 3%;
+    margin: 0 2%;
+    min-height: 300px;
+    text-align: left;
+}
+
+#infoBot .meio p {
+    padding-left: 5%;
+    padding-top: 3%;   
+}
+
+#infoBot .meio h3 {
+    text-align: center;
+}
+
+#infoBot .meio i {
+    float: left;    
+    padding-top: 4%; 
+}
+
+#infoBot .meio#loga {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#infoBot .meio#loga img{
+    padding-top: 13%;
+    height: 175px;
+}
+
+
+/* InfoRevert */
+
+#infoRevert {
+    min-height: 500px;
+    text-align: center;
+    margin-bottom: 10%;
+    padding: 0 0 0 0;
+}
+
+#infoRevert .meio {
+    width: 38%;
+    float: left;
+    padding: 3%;
+    margin: 2%;
+    min-height: 300px;
+}
+
+#infoRevert .meio p {
+    padding-left: 5%;
+    text-align: justify;    
+}
+
+#infoRevert .meio ul {
+    list-style-type: disc;
+}
+
+#infoRevert .meio li {
+    text-align: justify;
+    padding-left: 5%;
+    padding-top:3%
+}
+
+#infoRevert .meio img {
+    height: 300px;
+    padding-top: 100px;
+    visibility: visible;
+}
+
+
+/* InfoRevert2 */
+
+#infoRevert2 {
+    min-height: 600px;
+    text-align: center;
+    margin-bottom: 10%;
+    padding: 0 0 5% 0;
+}
+
+#infoRevert2 .meio {
+    width: 38%;
+    float: left;
+    padding: 3%;
+    margin: 2%;
+    min-height: 300px;
+}
+
+#infoRevert2 .meio .rejeitoLocal {
+    display: none;
+}
+
+#infoRevert2 .meio p {
+    text-align: justify;    
+}
+
+#infoRevert2 .meio ul {
+    list-style-type: none;
+}
+
+#infoRevert2 .meio li {
+    background-color: rgba(20, 110, 53, 0.3);
+    box-shadow: 2px 2px 3px 2px rgba(20, 110, 53, 0.5);
+    text-align: justify;
+    margin: 0 0 2% 0;
+    padding: 3% 5% 3% 5%;
+}
+
+#infoRevert2 .meio ul li:hover .rejeitoLocal {
+    display: inline;
+}
+
+#infoRevert2 .meio img {
+    height: 300px;
+    padding-top: 50px;
+}
+
+/* InfoMid */
+
+#infoMid {
+    min-height: 410px;
+    text-align: center;
+    padding: 5% 2% 5% 2%;    
+    margin: 0% 0% 5% 13%;
+    border-radius: 10%;
+    background-color: rgb(20, 110, 53);
+    width: 70%;
+    box-shadow:  12px 12px 5px 2px rgba(20, 110, 53, .2);
+}
+
+#infoMid h3 {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    height: 50px;
+}
+
+#infoMid ol{
+    text-align: justify;
+    padding: 0 2% 0 5%;
+	
+}
+
+#infoMid ol li {
+    font: bold italic 35px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+#infoMid p{
+	font: 12px/1.5 Helvetica, sans-serif;
+    padding-left: 20px;
+	padding-top: 0;
+}
+
+
+/* Entenda o Lixo */
+#oLixo {
+    background-color: white;
+    height: 1100px;
+}
+
+.oLixoHeader {
+    background-color: rgb(20, 110, 53);
+    height: 100px;
+    width: 100%;
+}
+
+.oLixoSubH {
+    background-color: rgba(20, 110, 53, 0.7);
+    height: 100px;
+    box-shadow: 3px 3px 5px 3px rgba(20, 110, 53, .5);
+}
+
+.oLixoHeader h1 {
+    margin: 0;
+    padding: 5px 5% 0;
+    font-size: 4em;
+    color: rgba(19, 224, 57, 0.425);
+}
+
+.oLixoSubH h1 {
+    margin: 0;
+    padding: 15px 5% 0;
+    font-size: 3em;
+}
+
+.oLixoWrp {
+    padding: 5px 5%;
+    height: 500px;
+}
+
+#oLixo .meio {
+    width: 49%;
+    float: left;
+    text-align: justify;
+    height: 200px;
+    padding: 2px 4px 1px 4px;
+}
+
+#oLixo .big {
+    width: 68%;
+    float: left;
+    text-align: justify;
+    height: 200px;
+    padding: 0px 4px 1px 4px;
+}
+
+#oLixo .small {
+    width: 26%;
+    float: left;
+    text-align: left;
+    height: 100px;
+    padding: 5px 5px 1px 6px;
+    margin: 140px 0 0 10px;
+   /* border-radius: 10%;
+    background-color: rgb(20, 110, 53);
+    box-shadow:  12px 12px 5px 1px rgba(20, 110, 53, .2);
+    */
+    border-left: 1px solid rgba(20, 110, 53, .2);
+}
+
+
+#oLixo .oLixoSubH .meio {
+    width: 48%;
+    float: left;
+    text-align: justify;
+    height: 100px;
+    padding: 2px 4px 1px 4px;
+}
+
+#oLixo .oLixoSubH img {
+    height: 200px;
+    padding: 20px 0 0px 320px;
+}
+
+#oLixo .small p {
+    text-align: center;
+}
+
+#oLixo .meio p {
+    text-align: left;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-top: 2px solid rgb(20, 110, 53);
+}
+
